@@ -1,0 +1,32 @@
+schema {
+    query: Query
+}
+
+type Query {
+    stocks: [Stock]
+    books: [Book]
+    friend: [Friend]
+}
+
+type Stock {
+    ticker: String
+    stockValue: String
+    volume: String
+    averageVolume: String
+    PE_Ratio: String
+    EPS: String
+    dividend: String
+    marketCap: String
+}
+
+type Book {
+    name: String
+    author: String
+    type: String
+}
+
+type Friend {
+    name: String
+    address: String
+    age: Int
+}
